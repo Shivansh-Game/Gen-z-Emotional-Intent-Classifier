@@ -7,3 +7,6 @@ About the model
 - Attention pooling was used as it is immensely more effective for this use case (since yk humans usually don't infer emotions by giving every word in a sentence the same importance)
 - A placeholder token was made "<UNK>" and used in the training data as well to teach the model that "Yo want to go get <UNK>" is usually someone asking to hang out. This type of pattern is sprinkled into the training data to encourage the AI to learn properly instead of just attributing an intent to a single word no matter the context
 - Padding was implemented so batch sizes could work properly 
+
+Testing
+- Pytest was used to test the model against many test cases at once, (72 of which only 5 failed unambigously)
